@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سامي الجحيش | المكتبة والوسائط</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a2a3a; /* كحلي رزين */
+            --accent: #8e44ad;  /* بنفسجي هادئ للتميز */
+            --bg: #ffffff;      /* الخلفية البيضاء */
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 1px solid #eee;
+            background-color: #fafafa;
+        }
+
+        h1 { font-family: 'Amiri', serif; font-size: 3.2rem; color: var(--primary); margin: 0; }
+
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+
+        .section-title {
+            font-family: 'Amiri', serif;
+            font-size: 2.2rem;
+            color: var(--primary);
+            border-right: 6px solid var(--accent);
+            padding-right: 15px;
+            margin: 50px 0 30px 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #eee;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            transition: 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-8px); border-color: var(--accent); }
+
+        .icon { font-size: 3.5rem; margin-bottom: 15px; display: block; }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 35px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: var(--accent); }
+
+        audio { width: 100%; margin-top: 20px; }
+        img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+
+        footer { text-align: center; padding: 60px; color: #aaa; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>سامي الجحيش</h1>
+    <p style="font-size: 1.2rem; color: #666;">مؤلف وباحث لغوي | أرشيف الأعمال الرقمي</p>
+</header>
+
+<div class="container">
+
+    <h2 class="section-title">📚 المستندات والبحوث</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="icon">📕</span>
+            <h3>كتب PDF</h3>
+            <p>أبحاث لغوية ومؤلفات كاملة بصيغة PDF.</p>
+            <a href="document.pdf" class="btn">تصفح الملف</a>
+        </div>
+        <div class="card">
+            <span class="icon">📘</span>
+            <h3>ملفات Word</h3>
+            <p>مسودات ومقالات بصيغة Word للتحميل.</p>
+            <a href="file.docx" class="btn">تحميل المستند</a>
+        </div>
+    </div>
+
+    <h2 class="section-title">🎙️ المكتبة الصوتية</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="icon">🔊</span>
+            <strong>تسجيل لغوي: تأملات في "انحُ هذا المنحى"</strong>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                متصفحك لا يدعم تشغيل الصوت.
+            </audio>
+        </div>
+    </div>
+
+    <h2 class="section-title">🖼️ معرض اللوحات والصور</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="calligraphy.jpg" alt="خط ديواني">
+            <strong>نموذج من الخط الديواني الفاخر</strong>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 سامي الجحيش | كافة الحقوق محفوظة
+</footer>
+
+</body>
+</html>
